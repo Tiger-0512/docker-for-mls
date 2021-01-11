@@ -1,0 +1,25 @@
+version: "2.3"
+
+services:
+        pytorch:
+                build: ./pytorch
+                container_name: tiger_pytorch
+                ports:
+                        - 10001:8888
+                volumes:
+                        - ${HOME_DIR}:/mnt/home
+                        - ${DATA_DIR}:/mnt/data
+                working_dir: /mnt/home
+                runtime: nvidia
+                stdin_open: true
+                env_file:
+                        - ./pytorch/nvidia_gpu.env
+        tensorboard:
+                build: ./tensorboard
+                container_name: tiger_tensorboard
+                ports:
+                        - 10002:6006
+                volumes:
+                        - ${LOG_DIR}:/logs
+                env_file:
+                        - ./pytorch/nvidia_gpu.env
