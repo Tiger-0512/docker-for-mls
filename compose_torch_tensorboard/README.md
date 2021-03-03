@@ -9,11 +9,11 @@
 ## Usage
 ### Download
 ```
-$ git clone https://github.com/Tiger-0512/compose-pytorch-tensorboard.git
+$ git clone https://github.com/Tiger-0512/docker-for-torches.git
 ```
 ### Build Containers
 ```
-$ cd compose-pytorch-tensorboard
+$ cd docker-for-torches/compose-torch-tensorboard
 $ docker-compose up -d
 ```
 ### Attach Container to use PyTorch
