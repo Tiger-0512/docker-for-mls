@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04  # Change this depending on your cuda version
 LABEL maintainer="Tiger-0512 <tiger.matsunaga.0512@gmail.com>"
 
 RUN apt-get update \
