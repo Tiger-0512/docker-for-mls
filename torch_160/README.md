@@ -1,10 +1,14 @@
 # Docker Components to build container for PyTorch Version 1.6.0
 
-## Environmenets
+## Test Environmenets
 - Docker 20.12.2
-- docker-compose 1.24.1
 - NVIDIA Driver Version 440.82
 - CUDA Version 10.2
+<br>
+
+- Docker 20.10.5
+- NVIDIA Driver Version 460.32.03
+- CUDA Version 11.2
 
 ## Usage
 ### Download
