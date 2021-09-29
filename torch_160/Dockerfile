@@ -35,7 +35,7 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 RUN curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim \
  && git clone https://github.com/Tiger-0512/dotfiles.git \
- && cp ./dotfiles/vim/docker/.vimrc ~/ \
+ && cp ./dotfiles/vim/remote/.vimrc ~/ \
  && rm -rf ./dotfiles
 
 COPY install.vimscript .
