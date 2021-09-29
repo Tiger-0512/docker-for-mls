@@ -38,5 +38,5 @@ RUN curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
  && cp ./dotfiles/vim/remote/.vimrc ~/ \
  && rm -rf ./dotfiles
 
-COPY install.vimscript .
-RUN vim -s install.vimscript
+COPY install.vim .
+RUN vim -s install.vim
