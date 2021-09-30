@@ -12,6 +12,7 @@ RUN apt-get update \
 RUN apt-get -y clean
 
 RUN pip install \
+    tensorflow-hub \
     black \
     jupyterlab_code_formatter \
     jupyterlab_vim
